@@ -99,7 +99,6 @@ plot_result(history)
 print(history.history.keys())
 
 testing = np.array([[28,2,1,9,6,11,0,0,0,0,17210,6.6,17039,195,36,643,-8,19.5,1721.0,15,6,0,6,9,8,0,0,0,0,16567,6.8,17047,197,55,-643,8,19.7,1656.7]])
-testing = testing
 print("the accuracy of the prediction = ",model.predict(testing))
 
 #!mkdir -p saved_model
