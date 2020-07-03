@@ -19,8 +19,6 @@ model.load_weights('saved_model/weights.v2')
 
 try:
     dataPoint = np.array([[28,2,1,9,6,11,0,0,0,0,17210,6.6,17039,195,36,643,-8,19.5,1721.0,15,6,0,6,9,8,0,0,0,0,16567,6.8,17047,197,55,-643,8,19.7,1656.7]])
-    dataPoint = dataPoint
-    dataPoint = ((dataPoint-dataPoint.min())/(dataPoint.max()-dataPoint.min()))
     print("the accuracy of the prediction = ",model.predict(dataPoint))
 except:
     raise Exception("Please use valid game data as input.")
